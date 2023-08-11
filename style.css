@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a{
+text-decoration: none;
+color: rgb(101, 48, 151);
+}
+
+li{
+  list-style: none;
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  text-transform: uppercase;
+}
+
+button {
+  font-weight: bold;
+  border-style: none;
+  background: none;
+  border: 1px solid white;
+}
+
+/************************* NAV **************************/
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+}
+
+nav li {
+  list-style: none;
+  padding: 30px 0;
+}
+
+#language {
+  background: #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/*************************HEADER **************************/
+
+header {
+  background: url(./assets/img/bg.jpg) fixed center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.main-header {
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#logo,
+h1 {
+  margin-bottom: 32px;
+  font-size: 1rem
+}
+#logo img {
+  width: 95%
+}
+
+.main-header button {
+  letter-spacing: 4px;
+  color: white;
+  font-size: 0.7rem;
+  padding: 17px 2px;
+  width: 314px;
+  border: 1px solid white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/************************* HEADER **************************/
+
+.header-text {
+  min-height: 140px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.1rem;
+  margin: 0 15%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/************************* ICON PART **************************/
+
+.icon-part {
+  background: rgb(9,9,8);
+  color: white;
+  min-height: 540px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-part-container{
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+    align-items: center;
+    
+}
+
+.list-icon-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+   
+}
+
+.list-icon-part h3{
+    margin-bottom: 15px;
+}
+
+.list-icon-part p{
+    font-size: 1rem;
+    margin: 0 5%;
+    margin-bottom: 30px;
+}
+
+.list-icon-part button{
+    color: white;
+    place-self: center;
+    width: 50%;
+    height: 40px;
+}
+.lip-logo{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.lip-logo img{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+/************************* NEWS PART **************************/
+
+.news-part {
+  background: rgb(247,246,246);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 18%;
+  font-weight: bold;
+}
+
+.news-part h2{
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.news-part p{
+    font-size: 0.85rem;
+}
+
+
+.header-news{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+    margin-bottom: 80px;
+}
+
+.right-part button{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+.main-news-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:100px;
+}
+
+.main-news-container p{
+    font-size: 0.8rem;
+    line-height: 18px;
+}
+.news-card{
+    min-height: 470px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card h4{
+    text-transform:none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.mn-pic img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.link{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    bottom: 1%;
+}
+
+
+
+/************************** CONTACT **************************/
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 16% 20px 16%;
+}
+
+.contact-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3%;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.list{
+  width: 20%;
+}
+
+.list:only-child{
+  background-color: red;
+}
+
+.list h5, li, p{
+  margin-bottom: 15px;
+}
+
+.list h6{
+  margin-bottom: 10px
+}
+
+.list p,a{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.list h5{
+  font-size: 1rem;
+}
+
+.network{
+  margin-bottom: 35px;
+  margin-top: 20px
+}
+
+.footer-logos i{
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+.network h5{
+  margin-bottom: 5px;
+}
+
+.contact-list:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform:translate(-50%);
+  background: rgb(209, 209, 209);
+  width: 95%;
+  height: 1px;
+}
+.contact-medias{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70% ;
+  align-items: center;
+  
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.contact-medias p{
+  font-size: 0.8rem;
+}
+
+
+.medias-text h5{
+  margin-bottom: 15px;
+}
+
+.medias-logos{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+footer{
+  width: 100%;
+  background: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18%;
+  padding-top: 1.5%;
+  padding-bottom: 0.7%;
+}
+
+footer ul{
+width: 100%;
+margin-top: 3%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer img{
+  width: 95%;
+}
+
+@media  screen and (max-width:972px) {
+
+  nav, .contact-container{
+    display: none;
+  }
+
+  .main-header{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .main-header #logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-text{
+    margin: 5% 2%;
+  }
+
+  .icon-part-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-news{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .main-news-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-part{
+    padding: 100px 5%;
+  }
+  .mn-pic{
+    display: flex;
+    justify-content: center;
+  }
+  .mn-pic img{
+    width: 45%;
+  }
+  
+  .news-card{
+    min-height: 420px
+  }
+
+  
+}
